@@ -310,66 +310,78 @@
 </div><a class="button button-lg button-primary-gradient wow fadeIn" href="#"><span>Ver todos los testimonios</span></a>
 </div>
 </section>
-<footer class="section footer-classic bg-gray-950 py-4">
+<footer class="section footer-classic bg-gray-950 py-4 text-white">
   <div class="container d-flex flex-wrap justify-content-between align-items-start">
-<!-- Contadores responsive -->
-<div class="row footer-counters text-center py-2">
-  <article class="col-6 col-md-3 counter-minimal mb-3">
-    <div class="counter-minimal-counter">
-      <div class="counter">97</div><span class="counter-postfix">%</span>
+    
+    <!-- Contadores -->
+    <div class="row footer-counters text-center py-2 w-100">
+      <article class="col-6 col-md-3 counter-minimal mb-3">
+        <div class="counter-minimal-counter">
+          <div class="counter">97</div><span class="counter-postfix">%</span>
+        </div>
+        <p class="counter-minimal-title">Egresados</p>
+      </article>
+      <article class="col-6 col-md-3 counter-minimal mb-3">
+        <div class="counter-minimal-counter">
+          <div class="counter">30</div><span class="counter-postfix">+</span>
+        </div>
+        <p class="counter-minimal-title">Docentes Certificados</p>
+      </article>
+      <article class="col-6 col-md-3 counter-minimal mb-3">
+        <div class="counter-minimal-counter">
+          <div class="counter">8</div>
+        </div>
+        <p class="counter-minimal-title">Campus Estudiantiles</p>
+      </article>
+      <article class="col-6 col-md-3 counter-minimal mb-3">
+        <div class="counter-minimal-counter">
+          <div class="counter">650</div>
+        </div>
+        <p class="counter-minimal-title">Estudiantes</p>
+      </article>
     </div>
-    <p class="counter-minimal-title">Egresados</p>
-  </article>
-  <article class="col-6 col-md-3 counter-minimal mb-3">
-    <div class="counter-minimal-counter">
-      <div class="counter">30</div><span class="counter-postfix">+</span>
-    </div>
-    <p class="counter-minimal-title">Docentes Certificados</p>
-  </article>
-  <article class="col-6 col-md-3 counter-minimal mb-3">
-    <div class="counter-minimal-counter">
-      <div class="counter">8</div>
-    </div>
-    <p class="counter-minimal-title">Campus Estudiantiles</p>
-  </article>
-  <article class="col-6 col-md-3 counter-minimal mb-3">
-    <div class="counter-minimal-counter">
-      <div class="counter">650</div>
-    </div>
-    <p class="counter-minimal-title">Estudiantes</p>
-  </article>
-</div>
-
 
     <!-- Sobre Nosotros -->
-    <div class="footer-about mx-3">
+    <div class="footer-about mx-3 mt-4">
       <h5 class="footer-heading">Sobre Nosotros</h5>
       <p class="footer-text">
-        INEIN brinda educación informática para el trabajo y formación en línea con un enfoque humanista y práctico.
+        INEIN ofrece formación informática y diplomados en línea con validez oficial SEP. Educación de calidad, accesible y práctica.
       </p>
     </div>
 
     <!-- Redes Sociales -->
-    <div class="footer-social mx-3">
+    <div class="footer-social mx-3 mt-4">
       <h5 class="footer-heading">Síguenos</h5>
       <ul class="list-inline social-icons">
-        <li class="list-inline-item"><a href="https://www.facebook.com/ineinsesecapa" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.facebook.com/ineinsesecapa" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-f"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-in"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
       </ul>
     </div>
   </div>
 
   <!-- Derechos y enlaces -->
-  <div class="footer-classic-aside text-center mt-3">
-    <p class="rights mb-0">
-      © <span class="copyright-year"></span> Todos los derechos reservados.
-      <a href="#">Términos de uso</a> y <a href="#">Política de privacidad</a>.
+  <div class="footer-classic-aside text-center mt-4">
+    <p class="rights mb-1">
+      © <span class="copyright-year" id="year"></span> INEIN. Todos los derechos reservados.
+    </p>
+    <p class="mb-1">
+      <a href="terminos.html" rel="nofollow">Términos y Condiciones</a> |
+      <a href="privacidad.html" rel="nofollow">Política de Privacidad</a>
+    </p>
+    <p class="mb-0">
+      Sitio desarrollado por <a href="https://softdevagency.com" target="_blank" rel="noopener noreferrer">SoftDevAgency</a>
     </p>
   </div>
+
+  <!-- JS para año automático -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </footer>
+
 </div>
 <div class="snackbars" id="form-output-global"></div>
 <script src="js/core.min.js"></script>
