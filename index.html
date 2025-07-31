@@ -42,6 +42,49 @@
   </style>
 </head>
 
+<!-- Botón flotante de WhatsApp con SVG oficial -->
+<a href="https://wa.me/5219181072407" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
+  <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+    <path d="M16 .003C7.163.003 0 7.163 0 16c0 2.824.735 5.49 2.134 7.871L.057 31.943l8.236-2.038A15.899 15.899 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837.003 16 .003zm0 29.281a13.317 13.317 0 0 1-6.788-1.84l-.486-.28-4.89 1.21 1.304-4.768-.316-.496A13.283 13.283 0 1 1 16 29.284zm7.254-9.5c-.397-.198-2.35-1.162-2.714-1.294-.364-.133-.63-.198-.896.199-.264.397-1.03 1.293-1.262 1.56-.232.265-.465.298-.861.1-.397-.199-1.677-.617-3.195-1.97-1.18-1.052-1.974-2.348-2.205-2.745-.232-.397-.025-.612.174-.81.18-.179.397-.464.595-.696.198-.232.264-.398.397-.663.133-.265.066-.498-.033-.696-.099-.199-.896-2.156-1.228-2.95-.324-.777-.655-.672-.896-.683l-.764-.015c-.265 0-.696.099-1.06.497s-1.395 1.364-1.395 3.33c0 1.965 1.427 3.861 1.626 4.129.198.265 2.807 4.281 6.805 6.004 3.998 1.722 3.998 1.149 4.714 1.08.715-.067 2.35-.957 2.68-1.881.331-.923.331-1.713.232-1.88-.1-.166-.365-.265-.763-.464z"/>
+  </svg>
+</a>
+
+<!-- Estilo -->
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 64px;
+    height: 64px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+</style>
+
+
 <!-- RD Navbar-->
 <div class="rd-navbar-wrap">
   <nav class="rd-navbar rd-navbar-classic"
@@ -145,7 +188,7 @@
                 <div class="box-animation">
                   <h6 data-caption-animate="slideInLeft" data-caption-delay="150">Comunidad Educativa</h6>
                   <h2 data-caption-animate="slideInLeft" data-caption-delay="300">
-                    Sé Parte de Nuestro Campus y <span class="text-italic font-weight-bold">Haz Amigos</span>
+                    Sé Parte de Nuestro CAMPO y <span class="text-italic font-weight-bold">Haz Amigos</span>
                   </h2>
                   <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
                     <a class="button button-primary-gradient" href="#"><span>Inscríbete hoy</span></a>
@@ -612,7 +655,7 @@
         <div class="counter-minimal-counter">
           <div class="counter">8</div>
         </div>
-        <p class="counter-minimal-title">Campus Estudiantiles</p>
+        <p class="counter-minimal-title">CAMPO Estudiantiles</p>
       </article>
       <article class="col-6 col-md-3 counter-minimal mb-3">
         <div class="counter-minimal-counter">
